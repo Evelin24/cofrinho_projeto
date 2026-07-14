@@ -8,17 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/contato.css"/>
   <link rel="stylesheet" href="../css/global.css"/>    
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
 <header>
-  <a href="../frontend/index.html" class="logo-link">
+  <a href="index.html" class="logo-link">
     <img src="assets/images/logo_cofrinho.png" alt="Logo Cofrinho" class="logo">
    </a>
       <nav>
@@ -26,7 +24,7 @@
           <a href="#">Quem somos</a>
           <a href="#">Contato</a>
       </nav>
-   <a href="../pages/login.html" class="btn-entrar">Minha conta</a>
+   <a href="frontend/login.html" class="btn-entrar">Minha conta</a>
 </header>
 
     <section class="contact-section-topo">
@@ -36,8 +34,6 @@
         <strong>juntos</strong>
       </h2>
     </section>
- 
-    
  
   <main class="contact-body">
       <div class="contact-grid">
@@ -57,7 +53,6 @@
                 <input type="text" id="field-name" name="name" class="form-input" placeholder="Seu nome" autocomplete="name" required/>
                 <span class="field-error" id="err-name">Por favor, escreva seu nome.</span>
               </div>
-
               
               <div class="form-field">
                 <label class="form-label" for="field-email">
@@ -82,7 +77,6 @@
               </div>
             </div>
 
-    
             <div class="form-field">
               <label class="form-label" for="field-message">
                 Mensagem <span class="required" aria-hidden="true">*</span>
@@ -105,8 +99,6 @@
               </p>
             </div>
 
-
-            <!-- Feedback messages -->
             <div class="form-message is-success" id="js-success" role="alert">
               ✓ &nbsp;Your message has been sent. I'll be in touch shortly.
             </div>
@@ -115,17 +107,10 @@
             </div>
           </form>
         </div>
-        <!-- ── Sidebar info ──────────────────────────────────────── -->
-
-
-
-
 
         <aside class="contact-info" aria-label="Contact information">
-          <!-- Availability -->
           <div class="contact-info__section">
             <p class="contact-info__label">Avaliação</p>
-            <!-- ↓ EDIT: Toggle the dot to red (#e74c3c) and change text when unavailable -->
             <div class="availability">
               <span class="availability__dot"></span>
               Avalie nosso atendimento
@@ -147,7 +132,6 @@
             </p>
           </div>
           
-          <!-- Parte das Redes Sociais/ Contatos -->
           <div class="contact-info__section">
             <p class="contact-info__label">Social</p>
             <div class="social-links">
@@ -161,11 +145,11 @@
             <p class="contact-info__label">Disponibilidade</p>
             <p class="contact-info__value">Resposta em até 3 dias</p>
           </div>
-        </aside><!-- /contact-info -->
-      </div><!-- /contact-grid -->
+        </aside>
+      </div>
   </main>
-  
-    <footer>
+
+       <footer>
         <div class="footer-wrapper">
             <div class="footer-content">
                 <div class="footer-brand">
