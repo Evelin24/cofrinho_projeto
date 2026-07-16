@@ -8,19 +8,21 @@
     <link rel="stylesheet" href="frontend/css/home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
     <header>
-        <img src="assets/images/logo_cofrinho.png" alt="Logo Cofrinho" class="logo">
+        <img src="frontend/images/logo_cofrinho.png" alt="Logo Cofrinho" class="logo">
         <nav>
             <a href="#">Sobre</a>
             <a href="#">Quem somos</a>
-            <a href="../pages/contato.html">Contato</a>
+            <a href="contato.html">Contato</a>
             <a href="#">Projetos</a>
         </nav>
-        <a href="login.html" class="btn-entrar">Minha conta</a>
+        <a href="frontend/login.html" class="btn-entrar">Minha conta</a>
     </header>
 
     <section class="hero swiper">
@@ -28,19 +30,18 @@
             <div class="swiper-slide">
                 <img src="frontend/images/banner1.png" alt="Banner 1" class="banner-img">
                 <div class="banner-content">  
-                     <h1>texto opicional</h1> 
                 </div>
             </div>
             <div class="swiper-slide">
                 <img src="frontend/images/banner2.png" alt="Banner 2" class="banner-img">
                 <div class="banner-content">
-                    <h1>texto opicional</h1> 
+                    <h1></h1> 
                 </div>
             </div>
             <div class="swiper-slide">
                 <img src="frontend/images/banner3.png" alt="Banner 3" class="banner-img">
                 <div class="banner-content">
-                    <h1>texto opicional</h1>
+                    <h1></h1>
                 </div>
             </div>
         </div>
@@ -69,6 +70,51 @@
             </div>
         </div>
     </section>
+
+    <div class="cultura-container">
+        <div class="cultura-titulo">
+            <h1>3 PASSOS PARA</h1>
+            <h2>INVESTIR NA CULTURA</h2>
+        </div>
+
+        <div class="cultura-passos">
+            <div class="cultura-passo">
+                <div class="passo-numero">01</div>
+                <div class="passo-texto">
+                    <h3>ESCOLHA O</h3>
+                    <h3>PROJETO</h3>
+                    <p>Navegue pelos projetos aprovados na Lei Rouanet. Filtre por categoria, leia a proposta e escolha o que conecta você.</p>
+                </div>
+            </div>
+
+            <div class="cultura-passo">
+                <div class="passo-numero">02</div>
+                <div class="passo-texto">
+                    <h3>PATROCINE VIA</h3>
+                    <h3>PIX</h3>
+                    <p>Sem burocracia. Copie a chave Pix ou escaneie o QR Code e transfira o valor mínimo R$ 10. Leva menos de 2 minutos.</p>
+                </div>
+            </div>
+
+            <div class="cultura-passo">
+                <div class="passo-numero">03</div>
+                <div class="passo-texto">
+                    <h3>RECEBA O</h3>
+                    <h3>CERTIFICADO</h3>
+                    <p>O certificado de patrocínio é emitido na hora, com protocolo único e validade fiscal junto a Receita Federal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projetos-banner-container">
+        <h2 class="projetos-banner-title">
+            CONHEÇA NOSSOS PROJETOS <br>
+            <span class="highlight">E APOIE A CULTURA</span>
+        </h2>
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
