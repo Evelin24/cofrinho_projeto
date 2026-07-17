@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cofrinho | Login</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<div class="login-background-overlay"></div>
+<div class="login-container">
+
+    <section class="login-left-side">
+        <div class="login-welcome-text">
+            <h2>Titulo aqui</h2>
+            <p> Calcule quanto você pode doar, acompanhe os projetos
+                e faça a diferença através das suas doações.
+            </p>
+        </div>
+        <div class="login-features">
+            <div class="login-feature">
+                <i class="fa-solid fa-piggy-bank"></i>
+                <span>Conheça o cofrinho</span>
+            </div>
+            <div class="login-feature">
+                <i class="fa-solid fa-calculator"></i>
+                <span>Calcule quanto pode doar</span>
+            </div>
+            <div class="login-feature">
+                <i class="fa-solid fa-heart"></i>
+                <span>Apoie projetos</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="login-right-side">
+        <div class="login-form-container active" id="loginForm">
+            <h2>Bem-vindo!</h2>
+            <p class="login-subtitle"> Faça login para acessar sua conta.</p>
+            <form>
+                <div class="login-input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="loginEmail" placeholder="Seu e-mail" autocomplete="email">
+                </div>
+                <div class="login-input-group login-password-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="loginPassword" placeholder="Sua senha" autocomplete="current-password">
+                    <button type="button" class="login-toggle-password"><i class="fa-solid fa-eye"></i></button>
+                </div>
+                <div class="login-options">
+                    <label><input type="checkbox">Lembrar de mim</label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="login-btn-primary">Entrar</button>
+            </form>
+            <div class="login-divider">
+                <span>ou</span>
+            </div>
+            <button class="login-btn-google"><i class="fa-brands fa-google"></i>Entrar com Google</button>
+            <p class="login-switch-form">Ainda não possui uma conta?
+                <a href="#" id="showRegister">Criar Conta</a>
+            </p>
+        </div>
+        
+        <!-- CADASTRO -->
+        <div class="login-form-container" id="registerForm">
+            <h2>Criar Conta</h2>
+            <p class="login-subtitle">Crie sua conta gratuitamente.</p>
+            <form>
+                <div class="login-input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="name" placeholder="Nome completo">
+                </div>
+                <div class="login-input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Seu e-mail">
+                </div>
+                <div class="login-input-group login-password-group">
+                    <i class="fa-solid fa-lock"></i> 
+                    <input type="password" id="password" placeholder="Crie uma senha">
+                    <button type="button" class="login-toggle-password">
+                        <i class="fa-solid fa-eye"></i> 
+                    </button>
+                </div>
+                <div class="login-input-group login-password-group">
+                    <i class="fa-solid fa-lock"></i> 
+                    <input type="password" id="confirmPassword" placeholder="Confirme sua senha">
+                    <button type="button" class="login-toggle-password">
+                        <i class="fa-solid fa-eye"></i>
+                    </button>
+                </div>
+                <label class="login-terms">
+                    <input type="checkbox"> Concordo com os Termos de Uso e Política de Privacidade.
+                </label>
+                <button type="submit" class="login-btn-primary"> Criar Conta</button>
+            </form>
+            <p class="login-switch-form">Já possui uma conta?
+                <a href="#" id="showLogin">Fazer Login</a>
+            </p>
+        </div>
+    </section>
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>

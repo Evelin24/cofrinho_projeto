@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cofrinho</title>
+  <meta name="description" content="Cofrinho" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/global.css"/>    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-link">
+    <img src="images/logo_cofrinho.png" alt="Logo Cofrinho" class="logo">
+   </a>
+      <nav>
+          <a href="sobre.html">Sobre</a>
+          <a href="#">Quem somos</a>
+          <a href="contato.html">Contato</a>
+      </nav>
+   <a href="login.html" class="btn-entrar">Minha conta</a>
+</header>
+
+    <section class="contact-section-topo">
+      <span class="subtitle-topo">ENTRE EM CONTATO</span>
+      <h2 class="title-topo">
+        Vamos <strong>trabalhar</strong><br>
+        <strong>juntos</strong>
+      </h2>
+    </section>
+ 
+  <main class="contact-body">
+      <div class="contact-grid">
+        <div class="contact-form-wrap">
+          <h2 class="contact-form__heading">Escreva sua mensagem</h2>
+          <p class="contact-form__subheading">Eu queria falar sobre...</p>
+        
+          <form id="js-contact-form" novalidate>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="field-name">
+                  Nome <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input type="text" id="field-name" name="name" class="form-input" placeholder="Seu nome" autocomplete="name" required/>
+                <span class="field-error" id="err-name">Por favor, escreva seu nome.</span>
+              </div>
+              
+              <div class="form-field">
+                <label class="form-label" for="field-email">
+                  Email <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input type="email" id="field-email" name="email" class="form-input" placeholder="seu@email.com" autocomplete="email" required/>
+                <span class="field-error" id="err-email">Por favor, coloque um email válido.</span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="field-subject">Assunto</label>
+              <div class="form-select-wrap">
+                <select id="field-subject" name="subject" class="form-select">
+                  <option value="">Selecione o assunto…</option>
+                  <option value="duvídas">Dúvidas</option>
+                  <option value="colaboração">Como colaborar</option>
+                  <option value="projetos">Projetos</option>
+                  <option value="problemas">Problemas com minha conta</option>
+                  <option value="outros">Outros</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="field-message">
+                Mensagem <span class="required" aria-hidden="true">*</span>
+              </label>
+              <textarea
+                id="field-message"
+                name="message"
+                class="form-textarea"
+                placeholder="Tell me about your project, timeline, and any other relevant details…"
+                required
+              ></textarea>
+              <span class="field-error" id="err-message">Please write a message.</span>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn-submit" id="js-submit-btn">
+                Enviar mensagem
+              </button>
+              <p class="form-note">
+                * Campos obrigatórios. Suas informações nunca são compartilhadas com terceiros.
+              </p>
+            </div>
+
+            <div class="form-message is-success" id="js-success" role="alert">
+              ✓ &nbsp;Your message has been sent. I'll be in touch shortly.
+            </div>
+            <div class="form-message is-error" id="js-error" role="alert">
+              Something went wrong. Please email me directly at the address below.
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact-info" aria-label="Contact information">
+          <div class="contact-info__section">
+            <p class="contact-info__label">Avaliação</p>
+            <div class="availability">
+              <span class="availability__dot"></span>
+              Avalie nosso atendimento
+            </div>
+          </div>
+
+          <div class="contact-info__section">
+            <p class="contact-info__label">Email</p>
+            <a href="futuroemail@gmail.com" class="contact-info__link">
+              futuroemail@gmail.com
+            </a>
+          </div>
+
+          <div class="contact-info__section">
+            <p class="contact-info__label">Localização</p>
+            <p class="contact-info__value">
+              Bahia, Brasil<br>
+              Sul da Bahia
+            </p>
+          </div>
+          
+          <div class="contact-info__section">
+            <p class="contact-info__label">Social</p>
+            <div class="social-links">
+              <a href="https://instagram.com/" target="_blank" rel="noopener" class="social-link">
+                <span class="social-link__platform">Instagram</span>@exhibitstudio</a>
+              <a href="https://twitter.com/" target="_blank" rel="noopener" class="social-link">
+                <span class="social-link__platform">whatsapp</span>12345678910</a>
+            </div>
+          </div>
+          <div class="contact-info__section">
+            <p class="contact-info__label">Disponibilidade</p>
+            <p class="contact-info__value">Resposta em até 3 dias</p>
+          </div>
+        </aside>
+      </div>
+  </main>
+
+       <footer>
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-blob"></div>
+                        Cofrinho
+                    </a>
+                    <p>Frase impactante que fale sobre o projeto só pra finalizar mesmo.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="blog.html" class="social-icon"><i class="fas fa-newspaper"></i></a>
+                        <a href="https://wa.me/55XXXXXXXXXXX" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Projetos</h4>
+                    <ul>
+                        <li><a href="#">Nossa Missão</a></li>
+                        <li><a href="#">Projetos Concluidos</a></li>
+                        <li><a href="#">Projetos Ativos</a></li>
+                        <li><a href="#">Resultados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Comunidades</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Avaliações</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Gestão</a></li>
+                        <li><a href="#">Politica de provacidade</a></li>
+                        <li><a href="#">Termos de serviço</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cofrinho. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/global.js"></script>
+    <script src="tooplate-exhibit-script.js"></script>
+</body>
+</html>
+
