@@ -37,23 +37,20 @@ nav { position: absolute; left: 50%; transform: translateX(-50%);}
 nav a {margin: 0 15px; text-decoration: none; color: rgb(255, 255, 255);
     font-weight: bold; font-size: 20px;}
 
-.btn-entrar {
-    margin-left: auto;
-    border: 1px solid #ffffff;
-    padding: 8px 20px;
+.btn-entrar { margin-left: auto; border: 1px solid #ffffff; padding: 8px 20px;
     border-radius: 5px;
     text-decoration: none;
     color: rgb(248, 248, 248);
     font-weight: bold;
 }
-
 .hero { position: relative; width: 100%; height: 600px; overflow: hidden;}
-
 .banner-img { width: 100%; height: 100%; object-fit: cover; display: block;}
-
 .swiper-pagination-bullet { background: #fff; opacity: 0.1;}
-
 .swiper-pagination-bullet-active { background: var(--amarelo-destaque); opacity: 1;}
+
+
+
+
 
 .banner-content {
     position: absolute;
@@ -63,12 +60,30 @@ nav a {margin: 0 15px; text-decoration: none; color: rgb(255, 255, 255);
     z-index: 5;
     color: white; 
 }
-
 .banner-content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Legibilidade sobre a foto */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn-campanha {
     display: inline-block;
@@ -113,36 +128,35 @@ nav a {margin: 0 15px; text-decoration: none; color: rgb(255, 255, 255);
     max-width: 1400px;
 }
 
-.banner-content-botoes {
-    display: flex;
-    width: 100%;
-}
+.banner-content-botoes { display: flex; width: 100%;}
 
-.banner-item {
-    background-color: #fff;
-    border: none;
-    border-left: 2px solid #000;
-    padding: 20px;
-    flex: 1;
-    text-align: left;
-    cursor: pointer;
-}
+.banner-item { background-color: #fff; border: none; border-left: 2px solid #000;
+    padding: 20px; flex: 1; text-align: left; cursor: pointer;}
 
 .banner-item:first-child { border-left: none; }
 
-.banner-item .title {
-    display: block;
-    font-size: 14px;
-    font-weight: 700;
-    color: #000;
-    text-transform: uppercase;
-    line-height: 1.1;
-    margin-bottom: 5px;
-}
+.banner-item .title { display: block; font-size: 14px; font-weight: 700;
+    color: #000; text-transform: uppercase; line-height: 1.1; margin-bottom: 5px;}
 
 .banner-item .subtitle { display: block; font-size: 12px; color: #999;}
 
 .banner-item:hover { background-color: #f9f9f9; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 * {box-sizing: border-box;}
 
@@ -194,6 +208,8 @@ body, html { margin: 0; padding: 0; height: 100%; width: 100%;}
     border-left: 0.5px solid #fbfbfb; }
 
 .cultura-passo:first-child { border-left: none; padding-left: 0;}
+
+
 
 .passo-numero {
     font-size: 64px;
@@ -253,19 +269,228 @@ body, html { margin: 0; padding: 0; height: 100%; width: 100%;}
   text-transform: uppercase;
 }
 
-.highlight { position: relative; color: #a74809; z-index: 1;}
 
-.highlight::before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  right: -5px;
-  bottom: 0px;
-  height: 80%;
-  background-color: #fbef87;
-  z-index: -1;
-  transform: skewX(-10deg);
+
+
+
+
+
+/* ==========================
+   GERAL
+========================== */
+.banner-incentivo *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
+
+.container-incentivo{
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+.steps-section{
+    background:#f3f3f3;
+    padding:70px 0;
+    font-family: "Oswald", sans-serif;
+}
+
+.steps-title{
+    margin-bottom:40px;
+    text-transform:uppercase;
+    border-bottom:1px solid #bfbfbf;
+    padding-bottom:15px;
+}
+
+.steps-title span{
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+    color: #111;
+    line-height: 1;
+}
+
+.steps-title strong{
+    display:block;
+    font-size:56px;
+    font-family: "Oswald", sans-serif;
+    font-weight:900;
+    color:#955400;
+    line-height:1;
+    margin-top:8px;
+}
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.step{
+    padding:0 35px;
+    border-right:1px solid #d4d4d4;
+}
+
+.step:last-child{
+    border-right:none;
+}
+
+.step-header{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    margin-bottom:25px;
+}
+
+.number{
+    font-size:64px;
+    font-family: "Oswald", sans-serif;
+    font-weight:900;
+    color:#767676;
+    line-height:1;
+}
+
+.step h3{
+    font-size:28px;
+    font-family: "Oswald", sans-serif;
+    font-weight:800;
+    color:#666;
+    text-transform:uppercase;
+    line-height:1.1;
+}
+
+.step p{
+    color:#666;
+    font-family: "Oswald", sans-serif;
+    font-size:18px;
+    line-height:1.6;
+}
+
+
+
+
+
+
+
+/* ==========================
+   CTA - Calculadora - Caminho
+========================== */
+
+.cta-section{
+    background:#171717;
+    color:#fff;
+    padding:25px 0;
+    border-top:6px solid #955400;
+    border-bottom:6px solid #955400;
+}
+
+.cta-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    max-width:1200px;
+    margin:auto;
+    padding-left:60px;
+    padding-right:60px;
+}
+
+.cta-text{
+    max-width:400px;
+}
+
+.cta-text h2{
+    font-size:30px;
+    font-family: "Oswald", sans-serif;
+    font-weight:800;
+    line-height:1;
+    text-transform:uppercase;
+}
+
+.cta-text h2 span{
+    color:#955400;
+}
+
+.cta-text p{
+    margin-top:20px;
+    font-family: "Oswald", sans-serif;
+    font-size:15px;
+    line-height:1.5;
+}
+
+.cta-button{
+    text-align:center;
+}
+
+.btn-calcular{
+    display:inline-block;
+    background:#955400;
+    color:#fff;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:500;
+    padding:25px 45px;
+    transition:.3s;
+}
+
+.btn-calcular:hover{
+    background:#b76a00;
+}
+
+.cta-button span{
+    display:block;
+    margin-top:14px;
+    color:#d5d5d5;
+    font-size:18px;
+}
+
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:992px){
+
+    .steps{
+        grid-template-columns:1fr;
+    }
+
+    .step{
+        border-right:none;
+        border-bottom:1px solid #d5d5d5;
+        padding:35px 0;
+    }
+
+    .step:last-child{
+        border-bottom:none;
+    }
+
+    .cta-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .steps-title span,
+    .steps-title strong{
+        font-size:40px;
+    }
+
+    .cta-text h2{
+        font-size:36px;
+    }
+
+    .btn-calcular{
+        font-size:30px;
+        width:100%;
+    }
+}
+
+
+
+
+
+
 
 
 footer{
@@ -419,4 +644,54 @@ footer{
     .feature-card {padding: 20px;}
     .feature-image { width: 180px; height: 180px;}
     .footer { padding: 40px 20px 20px;}
+}
+
+@media (max-width: 768px){
+
+    header{
+        padding: 15px 25px;
+    }
+
+    .logo{
+        height: 32px;
+    }
+
+    nav{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 15px;
+    }
+
+    nav a{
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .btn-entrar{
+        padding: 7px 16px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .banner-content-botoes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .banner-item{
+        flex: 1 1 50%;
+        border-left: none;
+        border-bottom: 1px solid #ddd;
+        padding: 18px;
+    }
+
+    .banner-item:nth-child(odd){
+        border-right: 1px solid #ddd;
+    }
+
 }
