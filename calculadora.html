@@ -1,75 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lei Rouanet – Calculadora de Incentivo Fiscal</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/frontend/css/global.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cofrinho | Lei Rouanet</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/calculadora.css"/>
+  
+  
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="nav-inner">
-    <a href="/" class="logo">
-      <span class="logo-icon">🎭</span>
-      <span>Rouanet<em>Calc</em></span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="/">Calculadora</a></li>
-      <li><a href="/sobre">Sobre a Lei</a></li>
-      <li><a href="/faq">FAQ</a></li>
-    </ul>
-    <button class="nav-toggle" id="navToggle">☰</button>
-  </div>
-</nav>
+<header class="meu-menu-header">
+    <img src="logo.png" alt="Logo" class="meu-menu-logo">
+    <nav class="meu-menu-nav">
+        <a href="index.html" class="active">Início</a>
+        <a href="#">Calculadora</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+        <a href="#" class="meu-menu-btn-entrar">Minha conta</a>
+    </nav>
+    <button class="meu-menu-toggle">☰</button>
+</header>
 
-<header class="hero">
-  <div class="hero-content">
-    <p class="eyebrow">Lei Federal nº 8.313/1991</p>
-    <h1>Transforme seu <span class="highlight">imposto</span><br/>em cultura</h1>
-    <p class="hero-sub">
+
+
+<section class="hero-calculadora">
+  <div class="hero-content-calculadora">
+    <p class="eyebrow-calculadora">Lei Federal nº 8.313/1991</p>
+    <h1>Transforme seu <span class="highlight-calculadora">imposto</span><br/>em cultura</h1>
+    <p class="hero-sub-calculadora">
       Descubra em segundos quanto você pode destinar à cultura brasileira
       sem pagar um centavo a mais ao governo.
     </p>
-    <a href="#calculadora" class="btn-primary">Calcular agora ↓</a>
+    <a href="#calculadora" class="btn-primary-calculadora">Calcular agora ↓</a>
   </div>
-  <div class="hero-visual">
-    <div class="stat-card">
-      <span class="stat-num">6%</span>
-      <span class="stat-label">máx. dedução Pessoa Física</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-num">4%</span>
-      <span class="stat-label">máx. dedução Pessoa Jurídica</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-num">R$0</span>
-      <span class="stat-label">custo real para o doador</span>
-    </div>
-  </div>
-</header>
 
-<section class="how-it-works">
-  <div class="container">
+  <div class="hero-visual-calculadora">
+    <div class="stat-card-calculadora">
+      <span class="stat-num-calculadora">6%</span>
+      <span class="stat-label-calculadora">máx. dedução Pessoa Física</span>
+    </div>
+    <div class="stat-card-calculadora">
+      <span class="stat-num-calculadora">4%</span>
+      <span class="stat-label-calculadora">máx. dedução Pessoa Jurídica</span>
+    </div>
+    <div class="stat-card-calculadora">
+      <span class="stat-num-calculadora">R$0</span>
+      <span class="stat-label-calculadora">custo real para o doador</span>
+    </div>
+  </div>
+</section>
+
+<section class="how-it-works-calculadora">
+  <div class="container-calculadora">
     <h2>Como funciona?</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-icon">💰</div>
+    <div class="steps-calculadora">
+      <div class="step-calculadora">
+        <div class="step-icon-calculadora">
+          <i class="fa-solid fa-money-bill-wave"></i>
+        </div>
         <h3>Você paga IR normalmente</h3>
         <p>O valor do seu imposto é calculado pela Receita Federal.</p>
       </div>
-      <div class="step-arrow">→</div>
-      <div class="step">
-        <div class="step-icon">🎭</div>
+
+      <div class="step-arrow-calculadora">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+
+      <div class="step-calculadora">
+        <div class="step-icon-calculadora">
+          <i class="fa-solid fa-masks-theater"></i>
+        </div>
         <h3>Decide destinar à cultura</h3>
         <p>Escolhe um projeto cultural aprovado pelo MinC.</p>
       </div>
-      <div class="step-arrow">→</div>
-      <div class="step">
-        <div class="step-icon">📋</div>
+
+      <div class="step-arrow-calculadora">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+
+      <div class="step-calculadora">
+        <div class="step-icon-calculadora">
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+        </div>
         <h3>Deduz no IR</h3>
         <p>O valor doado é descontado diretamente do seu imposto devido.</p>
       </div>
@@ -77,155 +94,175 @@
   </div>
 </section>
 
-<section class="calc-section" id="calculadora">
-  <div class="container">
-    <div class="calc-wrapper">
-      <div class="calc-header">
+<section class="calc-section-calculadora" id="calculadora">
+  <div class="container-calculadora">
+    <div class="calc-wrapper-calculadora">
+      <div class="calc-header-calculadora">
         <h2>Calculadora Rouanet</h2>
         <p>Preencha seus dados e veja o impacto cultural que você pode gerar.</p>
       </div>
 
-      <form class="calc-form" id="calcForm">
-        <div class="field-group">
-          <label class="field-label">Você é:</label>
-          <div class="toggle-group">
-            <button type="button" class="toggle-btn active" data-val="pf" id="btnPF">
-              👤 Pessoa Física
+      <form class="calc-form-calculadora" id="calcForm">
+        <div class="field-group-calculadora">
+          <label class="field-label-calculadora">Você é:</label>
+          <div class="toggle-group-calculadora">
+            <button type="button-calculadora" class="toggle-btn-calculadora active-calculadora" data-val="pf" id="btnPF">
+              Pessoa Física
             </button>
-            <button type="button" class="toggle-btn" data-val="pj" id="btnPJ">
-              🏢 Pessoa Jurídica
+            <button type="button" class="toggle-btn-calculadora" data-val="pj" id="btnPJ">
+              Pessoa Jurídica
             </button>
           </div>
           <input type="hidden" id="tipoContribuinte" value="pf" />
         </div>
 
-        <div class="field-group">
-          <label class="field-label" for="renda">
+        <div class="field-group-calculadora">
+          <label class="field-label-calculadora" for="renda">
             <span id="rendaLabel">Renda Bruta Anual (R$)</span>
           </label>
-          <div class="input-wrap">
-            <span class="prefix">R$</span>
+          <div class="input-wrap-calculadora">
+            <span class="prefix-calculadora">R$</span>
             <input
               type="text"
               id="renda"
-              class="field-input"
+              class="field-input-calculadora"
               placeholder="Ex: 120.000,00"
               inputmode="numeric"
               autocomplete="off"
             />
           </div>
-          <small class="field-hint" id="rendaHint">
+          <small class="field-hint-calculadora" id="rendaHint">
             Sua renda tributável total no ano (salários, pró-labore, aluguéis etc.)
           </small>
         </div>
 
-        <div class="field-group" id="grupoIR">
-          <label class="field-label" for="irDevido">
-            Imposto devido (R$) <span class="optional">– opcional</span>
+        <div class="field-group-calculadora" id="grupoIR">
+          <label class="field-label-calculadora" for="irDevido">
+            Imposto devido (R$) <span class="optional-calculadora">– opcional</span>
           </label>
-          <div class="input-wrap">
-            <span class="prefix">R$</span>
+          <div class="input-wrap-calculadora">
+            <span class="prefix-calculadora">R$</span>
             <input
               type="text"
               id="irDevido"
-              class="field-input"
+              class="field-input-calculadora"
               placeholder="Deixe em branco para estimarmos"
               inputmode="numeric"
               autocomplete="off"
             />
           </div>
-          <small class="field-hint">
+          <small class="field-hint-calculadora">
             Se você já tem o valor do IR calculado na sua declaração, informe aqui para maior precisão.
           </small>
         </div>
 
-        <button type="submit" class="btn-calcular" id="btnCalc">
+        <button type="submit" class="btn-calcular-calculadora" id="btnCalc">
           <span id="btnText">Calcular minha dedução</span>
-          <span id="btnLoader" class="loader hidden"></span>
+          <span id="btnLoader" class=""loader-calculadora hidden-calculadora""></span>
         </button>
       </form>
 
-      <div class="result-panel hidden" id="resultPanel">
-        <div class="result-header">
-          <span class="result-emoji">🎉</span>
+      <div class="result-panel-calculadora hidden" id="resultPanel">
+        <div class="result-header-calculadora">
+          <span class="result-emoji-calculadora">🎉</span>
           <h3>Seu potencial de impacto cultural</h3>
         </div>
 
-        <div class="result-grid">
-          <div class="result-card main">
-            <span class="rc-label">Valor máximo que pode doar</span>
-            <span class="rc-value green" id="resValorMax">—</span>
-            <span class="rc-sub" id="resPct">—% do seu imposto devido</span>
+        <div class="result-grid-calculadora">
+          <div class="result-card-calculadora main">
+            <span class="rc-label-calculadora">Valor máximo que pode doar</span>
+            <span class="rc-value-calculadora green" id="resValorMax">—</span>
+            <span class="rc-sub-calculadora" id="resPct">—% do seu imposto devido</span>
           </div>
-          <div class="result-card">
-            <span class="rc-label">Imposto devido estimado</span>
-            <span class="rc-value" id="resIR">—</span>
+          <div class="result-card-calculadora">
+            <span class="rc-label-calculadora">Imposto devido estimado</span>
+            <span class="rc-value-calculadora" id="resIR">—</span>
           </div>
-          <div class="result-card">
-            <span class="rc-label">Economia fiscal</span>
-            <span class="rc-value" id="resEconomia">—</span>
+          <div class="result-card-calculdora">
+            <span class="rc-label-calculadora">Economia fiscal</span>
+            <span class="rc-value-calculadora" id="resEconomia">—</span>
           </div>
-          <div class="result-card highlight-card">
-            <span class="rc-label">Custo real da doação para você</span>
-            <span class="rc-value gold" id="resCusto">R$ 0,00</span>
-            <span class="rc-sub">O governo paga por você!</span>
+          <div class="result-card-calculadora highlight-card-calculadora">
+            <span class="rc-label-calculadora">Custo real da doação para você</span>
+            <span class="rc-value-calculadora gold" id="resCusto">R$ 0,00</span>
+            <span class="rc-sub-calculadora">O governo paga por você!</span>
           </div>
         </div>
 
-        <div class="obs-box" id="resObs"></div>
+        <div class="obs-box-calculadora" id="resObs"></div>
 
-        <div class="result-actions">
-          <button class="btn-secondary" onclick="compartilhar()">📤 Compartilhar resultado</button>
-          <button class="btn-outline" onclick="resetar()">🔄 Nova simulação</button>
+        <div class="result-actions-calculadora">
+          <button class="btn-secondary-calculadora" onclick="compartilhar()">📤 Compartilhar resultado</button>
+          <button class="btn-outline-calculadora" onclick="resetar()">🔄 Nova simulação</button>
         </div>
       </div>
 
-      <div class="error-panel hidden" id="errorPanel">
+      <div class="error-panel-calculadora hidden" id="errorPanel">
         <span>⚠️</span> <span id="errorMsg">Erro ao calcular.</span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="disclaimer">
-  <div class="container">
+<section class="disclaimer-calculadora">
+  <div class="container-calculadora">
     <p>
-      ⚖️ <strong>Importante:</strong> Esta calculadora é uma ferramenta educativa e de estimativa.
+      ⚖️ <strong>Importante:</strong> Esta calculadora é uma ferramenta de estimativa.
       Os valores são baseados na tabela progressiva do IRPF 2024 e nas regras gerais da Lei Rouanet.
       Consulte sempre um contador ou advogado tributarista antes de tomar decisões financeiras.
     </p>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <p class="footer-logo">🎭 RouanetCalc</p>
-        <p>Incentivando a cultura brasileira através da informação.</p>
-      </div>
-      <div>
-        <p class="footer-title">Links úteis</p>
-        <ul>
-          <li><a href="https://salic.cultura.gov.br" target="_blank" rel="noopener">SALIC – Sistema de Apoio às Leis de Incentivo</a></li>
-          <li><a href="https://www.gov.br/cultura/pt-br" target="_blank" rel="noopener">Ministério da Cultura</a></li>
-          <li><a href="https://www.receita.fazenda.gov.br" target="_blank" rel="noopener">Receita Federal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer-title">Navegação</p>
-        <ul>
-          <li><a href="/">Calculadora</a></li>
-          <li><a href="/sobre">Sobre a Lei</a></li>
-          <li><a href="/faq">FAQ</a></li>
-        </ul>
-      </div>
-    </div>
-    <hr class="footer-hr" />
-    <p class="footer-copy">© 2026 RouanetCalc · Feito para Diminuir seu imposto</p>
-  </div>
-</footer>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-blob"></div>
+                        Cofrinho
+                    </a>
+                    <p>Financiamento colaborativo para projetos culturais aprovados na Lei Rouanet e CJA. Sul da Bahia em cena.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="blog.html" class="social-icon"><i class="fas fa-newspaper"></i></a>
+                        <a href="https://wa.me/55XXXXXXXXXXX" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Projetos</h4>
+                    <ul>
+                        <li><a href="#">Nossa Missão</a></li>
+                        <li><a href="#">Projetos Concluidos</a></li>
+                        <li><a href="#">Projetos Ativos</a></li>
+                        <li><a href="#">Resultados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Comunidades</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Avaliações</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Gestão</a></li>
+                        <li><a href="#">Politica de provacidade</a></li>
+                        <li><a href="#">Termos de serviço</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cofrinho. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-<script src="/static/js/main.js"></script>
+    <script src="js/global.js"></script>
 </body>
 </html>
