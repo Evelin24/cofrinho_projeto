@@ -1,73 +1,78 @@
+    
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cofrinho</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cofrinho | Lei Rouanet</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="css/home.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="images/logo_cofrinho.png" alt="Logo Cofrinho" class="logo">
-        <nav>
+
+    <header id="header">
+        <img src="/static/images/banner1.png" alt="Cofrinho" class="header-logo" style="height:36px;object-fit:contain;filter:brightness(10)"/>
+        <nav id="mainNav">
+            <a href="index.html">Início</a>
+            <a href="calculadora.html">Calculadora</a>
             <a href="sobre.html">Sobre</a>
             <a href="contato.html">Contato</a>
-            <a href="#">Projetos</a>
+            <a href="login.html" class="btn-entrar">Minha conta</a>
         </nav>
-        <a href="login.html" class="btn-entrar">Minha conta</a>
+        <button class="nav-toggle" id="navToggle">☰</button>
     </header>
 
-    <section class="hero swiper">
+    <section class="hero-swiper swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="images/banner1.png" alt="Banner 1" class="banner-img">
-                <div class="banner-content">  
-                </div>
+            <img src="images/banner1.png" alt="Banner 1" class="banner-img"/>
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h2>Transforme seu imposto em cultura</h2>
+                <p>Descubra quanto você pode destinar via Lei Rouanet</p>
+            </div>
             </div>
             <div class="swiper-slide">
-                <img src="images/banner2.png" alt="Banner 2" class="banner-img">
-                <div class="banner-content">
-                    <h1></h1> 
-                </div>
+            <img src="images/banner2.png" alt="Banner 2" class="banner-img"/>
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h2>Apoie a arte brasileira</h2>
+                <p>Sem pagar nada a mais — o governo patrocina por você</p>
+            </div>
             </div>
             <div class="swiper-slide">
-                <img src="images/banner3.png" alt="Banner 3" class="banner-img">
-                <div class="banner-content">
-                    <h1></h1>
-                </div>
+            <img src="images/banner3.png" alt="Banner 3" class="banner-img"/>
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h2>Lei Rouanet 2026</h2>
+                <p>Novos limites de isenção — calcule agora</p>
+            </div>
             </div>
         </div>
         <div class="swiper-pagination"></div>
     </section>
 
-     
-    <section class="banner-botoes-container">
-        <div class="banner-container">
-            <div class="banner-content-botoes">
-                <button class="banner-item" type="button">
-                    <span class="title">COMO APOIAR</span>
-                    <span class="subtitle">Guia completo</span>
-                </button>
-                <button class="banner-item" type="button">
-                    <span class="title">LEI DE INCENTIVO<br>ABATIMENTO FISCAL</span>
-                    <span class="subtitle">Entenda os benefícios</span>
-                </button>
-                <button class="banner-item" type="button">
-                    <span class="title">EMITA A 2ª VIA DO<br>SEU CERTIFICADO</span>
-                    <span class="subtitle">Busque pelo CPF</span>
-                </button>
-                <button class="banner-item" type="button">
-                    <span class="title">SEUS PROJETOS<br>DO SEU IMPOSTO</span>
-                    <span class="subtitle">Descubra quanto pode redirecionar</span>
-                </button>
+    <section>
+        <div class="quick-btns">
+            <div class="quick-btns-inner">
+            <a href="/sobre" class="quick-btn">
+                <span class="qb-title">COMO APOIAR</span>
+                <span class="qb-sub">Guia completo</span>
+            </a>
+            <a href="/sobre#mecanismos" class="quick-btn">
+                <span class="qb-title">LEI DE INCENTIVO<br/>ABATIMENTO FISCAL</span>
+                <span class="qb-sub">Entenda os benefícios</span>
+            </a>
+            <a href="/faq" class="quick-btn">
+                <span class="qb-title">DÚVIDAS FREQUENTES</span>
+                <span class="qb-sub">Tire suas dúvidas</span>
+            </a>
+            <a href="#calculadora" class="quick-btn">
+                <span class="qb-title">FAÇA O CÁLCULO<br/>DO SEU IMPOSTO</span>
+                <span class="qb-sub">Descubra quanto pode redirecionar</span>
+            </a>
             </div>
         </div>
     </section>
@@ -104,22 +109,21 @@
             </div>
         </div>
     </div>
-</section>
-
+  </section>
 
 <section class="cta-section">
     <div class="container cta-content">
         <div class="cta-text">
             <h2>
                 QUANTO DO SEU
-                <span>IMPOSTO PODE</span><br>
-                VIRAR CULTURA?
+                <span>IMPOSTO</span><br>
+                PODE VIRAR CULTURA?
             </h2>
             <p>Pela Lei Rouanet, você redireciona imposto que já pagaria ao
                governo para projetos culturais — sem custo extra.</p>
         </div>
         <div class="cta-button">
-            <a href="#" class="btn-calcular">
+            <a href="calculadora.html" class="btn-calcular">
                 CALCULE AQUI<br>
             </a>
             <span>PF: até 6% do IR devido · PJ: até 4%.</span>
